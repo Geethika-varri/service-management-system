@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* =========================
+   SEA BLUE THEME SYSTEM
+========================= */
+
+:root {
+    --sea-primary: #0ea5e9;   /* main blue */
+    --sea-dark: #0369a1;      /* sidebar */
+    --sea-light: #e0f2fe;     /* background */
+    --sea-accent: #38bdf8;    /* hover */
+}
+
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+    background-color: var(--sea-light);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    background-color: var(--sea-dark);
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: var(--sea-primary);
+}
+
+.sidebar a.active {
+    background-color: var(--sea-primary);
+    color: white;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: white;
+    border-left: 4px solid var(--sea-primary);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+    background-color: var(--sea-primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--sea-dark);
+}
+
+
+/* =========================
+   SMALL IMPROVEMENTS
+========================= */
+
+.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 10px;
+}
