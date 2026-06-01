@@ -13,3 +13,4 @@ class RequestStatusLog extends Model
         'changed_by',
     ];
 }
+
